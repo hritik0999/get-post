@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="form">
+
+
+        <div class="formborder">
+            <form #formTotalData="ngForm" (ngSubmit)="getDataForAdd(formTotalData.value)" >
+                <h1>Enter data to add</h1>
+                <input placeholder="enter UserId" ngModel name="UserId"><br><br>
+                <input placeholder="enter Id" ngModel name="Id"><br><br>
+                <input placeholder="enter title" ngModel name="title"><br><br>
+                <input placeholder="enter data in body" ngModel name="body"><br><br>
+                <button class="btn btn-secondary">add</button>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+
+<table  *ngIf="users">
+
+<tr>
+
+<th>UserId</th>
+<th>id</th>
+<th>title   </th>
+<th>body</th>
+
+</tr>
+
+<tr *ngFor='let user of users' >
+
+<td>{{ user.userId }}</td>
+<td>{{ user.id }}</td>
+<td>{{ user.title }}</td>
+<td>{{ user.body }}</td>
+
+</tr>
+
+<!-- <tr *ngIf="hello" > -->
+
+<!-- <td>{{ users }}</td>
+<td></td>
+<td></td>
+<td></td> -->
+<tr *ngFor ="let my of anydata" >
+
+<td>{{ my.userId }}</td>
+<td>{{ my.id }}</td>
+<td>{{ my.title }}</td>
+<td>{{ my.body }}</td>
+
+
+</tr>
+
+<tr *ngIf="hello">
+
+<td>{{ users.payload.UserId }}</td>
+<td>{{ users.payload.Id }}</td>
+<td>{{ users.payload.title }}</td>
+<td>{{ users.payload.body }}</td>
+
+</tr>
+
+<!-- </tr> -->
+
+
+</table>

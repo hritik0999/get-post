@@ -1,0 +1,30 @@
+body
+{
+
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100px;
+width: 100%;
+box-sizing: border-box;
+
+}
+
+a
+{
+
+text-decoration: none;
+padding: 15px 20px;
+margin: 10px;
+border: 2px solid transparent;
+border-radius: 2px;
+
+}
+
+.active
+{
+
+background-color: green;
+color: #fff;
+
+}
